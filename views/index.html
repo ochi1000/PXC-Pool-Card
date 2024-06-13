@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamLink</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+        <!--
+  Welcome to Tailwind Play, the official Tailwind CSS playground!
+
+  Everything here works just like it does when you're running Tailwind locally
+  with a real build pipeline. You can customize your config file, use features
+  like `@apply`, or even add third-party plugins.
+
+  Feel free to play with this example if you're just learning, or trash it and
+  start from scratch if you know enough to be dangerous. Have fun!
+-->
+<nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <a href="./index.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">
+                <img class="h-8 w-auto" src="../public/images/logo.png" alt="Your Company">
+              </a>
+        </div>
+          
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="./investor.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Invest</a>
+              <a href="./card.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Card</a>
+            </div>
+          </div>
+  
+          <!-- Profile dropdown -->
+          <div class="relative ml-3">
+            <!-- <div>
+              <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">Open user menu</span>
+                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              </button>
+            </div> -->
+  
+            <!--
+              Dropdown menu, show/hide based on menu state.
+  
+              Entering: "transition ease-out duration-100"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95"
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </nav>
+  
+  <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-black py-6 sm:py-12">
+    <img src="../public/images/bg.jpg" alt="" class="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
+    <div class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+    <div class="relative bg-white px-6 pb-8 pt-10 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+      <div class="mx-auto max-w-md">
+          <div class="flex justify-center">
+            <button class="bg-black text-white font-bold py-2 px-4 rounded hover:scale-105">Get Card - 50ALGO</button>
+          </div>
+          <br>
+          <div class="flex justify-center">
+            <div>
+                <div class="w-96 h-56 m-auto bg-red-100 rounded-xl relative text-white shadow-2xl transition-transform transform">
+            
+                    <img class="relative object-cover w-full h-full rounded-xl" src="https://i.imgur.com/kGkSg1v.png">
+                    
+                    <div class="w-full px-8 absolute top-8">
+                        <div class="flex justify-between">
+                            <div class="">
+                                <p class="font-light">
+                                    <img class="h-10 w-auto" src="../public/images/logo.png"/>
+                                </h1>
+                                <p class="font-medium tracking-widest">
+                                    Ochi Jideofor
+                                </p>
+                            </div>
+                            <img class="w-14 h-14" src="https://i.imgur.com/bbPHJVe.png"/>
+                        </div>
+                        <br>
+                        <div class="pt-1">
+                            <p class="font-medium tracking-more-wider">
+                                4642  3489  9867  7632
+                            </p>
+                        </div>
+                        <div class="pt-6 pr-6">
+                            <div class="flex justify-between">
+                                <div class="">
+                                    <p class="font-light text-xs">
+                                        Valid
+                                    </h1>
+                                    <p class="font-medium tracking-wider text-sm">
+                                        11/15
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p class="font-light text-xs text-xs">
+                                        Expiry
+                                    </h1>
+                                    <p class="font-medium tracking-wider text-sm">
+                                        03/25
+                                    </p>
+                                </div>
+        
+                                <div class="">
+                                    <p class="font-light text-xs">
+                                        CVV
+                                    </h1>
+                                    <p class="font-bold tracking-more-wider text-sm">
+                                        ···
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+        <div class="flex justify-center">
+          <p class="text-2xl font-bold">Card Balance</p>
+        </div>
+        <div class="flex justify-center">
+          <p class="text-xl font-bold">$50.90</p>
+        </div>
+        <br>
+        <div class="flex justify-center">
+            <button class="bg-black text-white font-bold py-2 px-4 rounded hover:scale-105">Fund Card - with ALGO</button>
+          </div>
+          <br>
+
+      </div>
+    </div>
+  </div>
+  
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
